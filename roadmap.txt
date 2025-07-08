@@ -6,13 +6,49 @@ Target Outcome: Be able to build, deploy, audit, and integrate Solana programs (
 
 📅 Month 1: Blockchain & Solana Fundamentals
 📘 Learn Blockchain Basics
+
 What is a blockchain?
+A blockchain is a decentralized digital ledger that records transactions across a network of computers.
+Each "block" contains a list of transactions, and blocks are linked together in a "chain" in the order they were added. Once a block is added, its data can’t be altered — making it secure, transparent, and tamper-proof.
+Think of it like a public, permanent notebook where everyone can see the pages, but no one can erase them.
 
 Consensus (Proof of Stake vs Proof of Work)
+A consensus mechanism helps blockchain nodes agree on which transactions are valid.
+✅ Proof of Work (PoW):
+Used by Bitcoin and older Ethereum versions.
+Miners solve complex math problems to validate blocks.
+Requires high energy and computation.
+More secure but less eco-friendly.
+✅ Proof of Stake (PoS):
+Used by modern Ethereum.
+Validators are chosen based on how many coins they "stake" (lock up).
+Faster and energy-efficient.
+Reduces the need for expensive hardware.
+🟢 Summary:
+PoW = High energy, secure, slow.
+PoS = Low energy, scalable, eco-friendly.
 
 Gas, transactions, blocks, mempool
+Gas: The fee paid to perform actions (like sending ETH or running smart contracts). Think of it as "fuel" for your transaction.
+Transactions: Actions made by users like sending tokens or interacting with contracts.
+Blocks: Groups of validated transactions that are added to the blockchain.
+Mempool: A waiting room where pending transactions wait to be picked by a miner/validator and added to a block.
+
 
 Accounts vs contracts vs wallets
+🧾 Accounts:
+There are two types:
+Externally Owned Accounts (EOA): Controlled by a private key (e.g., your wallet).
+Contract Accounts: Run smart contract code and are controlled by logic.
+
+📜 Contracts:
+These are self-executing programs stored on the blockchain.
+They define rules (e.g., for a token, game, or auction) and can’t be changed once deployed.
+
+💼 Wallets:
+Interfaces like MetaMask, Trust Wallet.
+Help manage your EOA — store your private keys, send transactions, and interact with dApps.
+
 
 🛠️ Resources:
 
@@ -27,6 +63,20 @@ YouTube: Simply Explained - Blockchain
 
 🔷 Understand Solana Architecture
 Solana vs Ethereum: Speed, cost, execution
+🔁 Solana vs Ethereum: Speed, Cost, Execution
+Feature	Solana	Ethereum
+Speed	~65,000 transactions/sec (theoretical), 1000s real-time	~30 TPS (Ethereum mainnet)
+Transaction Cost	Very low (~$0.00025 per tx)	Higher gas fees (~$0.10 – $100+, depending on congestion)
+Execution	Parallel execution using a runtime called Sealevel	Sequential execution in EVM
+Consensus	Proof of History + Proof of Stake	Proof of Stake
+Block Time	~400ms	~12s (Ethereum mainnet)
+
+🔍 Key Takeaway:
+
+Solana is faster and cheaper, making it ideal for high-frequency apps like DeFi, NFTs, and games.
+
+Ethereum is more mature, secure, and has broader adoption but is slower and costlier.
+
 
 What is a Program (Solana smart contract)?
 
